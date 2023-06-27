@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/note_details_menu"
+        android:icon="@drawable/icon_task"
+        app:showAsAction="always"
+        android:title="@string/action_button_title">
+
+
+        <menu>
+
+            <item android:id="@+id/note_details_menu_share_note"
+                android:title="@string/menu_item_share_note"
+                android:icon="@drawable/icon_note" />
+
+            <item
+                android:id="@+id/note_details_menu_save"
+                android:icon="@drawable/icon_save"
+                android:iconTint="@color/color_scheme_yellow"
+                android:title="@string/button_save" />
+            <item
+                android:id="@+id/note_details_menu_cancel"
+                android:icon="@drawable/icon_cancel"
+                android:iconTint="@color/color_scheme_yellow"
+                android:title="@string/button_cancel" />
+            <item
+                android:id="@+id/note_details_menu_delete"
+                android:icon="@drawable/icon_delete"
+                android:iconTint="@color/color_scheme_yellow"
+                android:title="@string/button_delete" />
+
+        </menu>
+
+
+    </item>
+
+
+</menu>

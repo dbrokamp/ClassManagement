@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">WGU Class Management</string>
+
+    <string name="hint_enter_name">Enter Name</string>
+    <string name="hint_enter_start_date">Enter Start Date</string>
+    <string name="hint_enter_end_date">Enter End Date</string>
+    <string name="hint_enter_email">Enter Email</string>
+    <string name="hint_enter_phone_number">Enter Phone Number</string>
+    <string name="hint_enter_title">Enter Title</string>
+    <string name="hint_enter_note">Enter Note</string>
+    <string name="hint_search_all">Search all items</string>
+
+    <string name="headline_title">Title</string>
+    <string name="headline_start_date">Start Date</string>
+    <string name="headline_end_date">End Date</string>
+    <string name="headline_courses">Courses</string>.
+    <string name="headline_select_course">Select Course</string>
+    <string name="headline_terms">Terms</string>
+    <string name="headline_assessments">Assessments</string>
+    <string name="headline_notes">Notes</string>
+    <string name="headline_instructors">Instructors</string>
+
+
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
+
+    <string name="content_description_title_icon">Title Icon</string>
+    <string name="content_description_subTitle_icon">Subtitle Icon</string>
+    <string name="content_description_button_icon">Clickable Icon</string>
+    <string name="content_description_save_button_icon">Clickable Save Icon</string>
+    <string name="content_description_cancel_button_icon">Clickable Cancel Icon</string>
+    <string name="content_description_delete_button_icon">Clickable Delete Icon</string>
+    <string name="content_description_spinner_select_term">Drop down menu to select term</string>
+    <string name="content_description_spinner_select_course_status">Drop down menu to select course status</string>
+    <string name="content_description_spinner_select_instructor">Drop down menu to select course instructor</string>
+    <string name="content_description_spinner_select_course">Drop down menu to select course</string>
+    <string name="content_description_action_button_icon">Clickable Action Icon</string>
+
+
+    <string name="menu_title_add">Add</string>
+    <string name="menu_title_actions">Actions</string>
+    <string name="menu_item_new_term">New Term</string>
+    <string name="menu_item_new_instructor">New Instructor</string>
+    <string name="menu_item_share_note">Share Note</string>
+
+    <string name="spinner_prompt_select_status">Select Status</string>
+    <string name="spinner_prompt_select_instructor">Select Instructor</string>
+    <string name="spinner_prompt_select_term">Select Term</string>
+    <string name="spinner_prompt_select_course">Select Course</string>
+
+    <string name="switch_turn_on_alerts">Create alerts for these dates</string>
+
+    <string name="place_holder_dates">Placeholder - Placeholder</string>
+
+    <string name="channel_name">WGU</string>
+    <string name="channel_description">WGU Class Management Channel</string>
+    <string name="channel_id">wgu_class_management</string>
+
+    <string name="action_button_title">Actions</string>
+
+    <string name="terms_link">Terms</string>
+    <string name="assessments_link">Assessments</string>
+    <string name="notes_link">Notes</string>
+    <string name="add_new_term">New Term</string>
+    <string name="add_new_class">New Course</string>
+    <string name="add_new_assessment">New Assessment</string>
+    <string name="add_new_note">New Note</string>
+    <string name="add_new_instructor">New Instructor</string>
+    <string name="main_menu_title">Add</string>
+    <string name="add_new_term_label">Add New Term</string>
+
+    <string name="button_select_start_date">Select Start Date</string>
+    <string name="button_select_end_date">Select End Date</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="dash_with_spaces">\u0020-\u0020</string>
+    <string name="spinner_select_term">Term</string>
+    <string name="spinner_select_course_status">Select Status</string>
+    <string name="spinner_select_course">Select Course</string>
+    <string name="course_title">Course</string>
+    <string name="term_title">Term</string>
+    <string name="assessment_title">Assessment</string>
+    <string name="assessment_title_plural">Assessments</string>
+    <string name="instructor_title">Instructor</string>
+    <string name="course_status_title">Course Status</string>
+    <string name="name_caption">Name</string>
+    <string name="instructor_name_caption">Instructor Name</string>
+
+    <string name="last_name_caption">Last Name</string>
+
+
+    <string name="select_dates_caption">Select Dates</string>
+
+    <string name="email_title">Email</string>
+    <string name="phone_number_title">Phone Number</string>
+
+
+    <string name="caption_select_assessment_type">Select Assessment Type</string>
+    <string name="hint_assessment_type">Select Type</string>
+    <string name="note_title">Note</string>
+
+    <string name="courses_title">Courses</string>
+
+    <string name="notes_title">Notes</string>
+    <string name="menu_course_detail_title">Add To Course</string>
+    <string name="spinner_course_detail_select_instructor">Select Instructor</string>
+    <string name="text_view_dates">Dates</string>
+    <string name="text_view_type">Type</string>
+    <string name="spinner_content_description_assessment_course">Assessment Course</string>
+
+    <string-array name="course_statuses">
+        <item>Plan To Take</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+    </string-array>
+
+    <string-array name="instructors">
+        <item>Select Instructor</item>
+        <item>Add New Instructor</item>
+    </string-array>
+
+    <string-array name="assessment_types">
+        <item>Select Type</item>
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+
+    <string-array name="main_titles">
+        <item>Terms</item>
+        <item>Courses</item>
+        <item>Assessments</item>
+        <item>Notes</item>
+        <item>Instructors</item>
+    </string-array>
+
+    <string-array name="main_button_texts">
+        <item>View Terms</item>
+        <item>View Courses</item>
+        <item>View Assessments</item>
+        <item>View Notes</item>
+        <item>View Instructors</item>
+    </string-array>
+</resources>

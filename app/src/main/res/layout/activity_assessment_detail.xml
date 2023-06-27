@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".ViewControllers.Detail.AssessmentDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/assessmentDetailTitleCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/headline_title"
+            android:textColor="@color/main_blue" />
+
+        <EditText
+            android:id="@+id/editTextAssessmentDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/assessmentDetailTitleCaption"
+            android:hint="@string/hint_enter_title"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textColorHint="#616161" />
+
+        <TextView
+            android:id="@+id/assessmentDetailDateCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAssessmentDetailTitle"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_view_dates"
+            android:textColor="@color/main_blue" />
+
+        <LinearLayout
+            android:id="@+id/assessmentDetailDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assessmentDetailDateCaption">
+
+            <EditText
+                android:id="@+id/editTextAssessmentDetailStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:hint="@string/hint_enter_start_date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textColorHint="#616161" />
+
+            <EditText
+                android:id="@+id/editTextAssessmentDetailEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:hint="@string/hint_enter_end_date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textColorHint="#616161" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/assessmentDetailCourseCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assessmentDetailDateLayout"
+            android:layout_marginTop="10dp"
+            android:text="@string/course_title"
+            android:textColor="@color/main_blue" />
+
+        <Spinner
+            android:id="@+id/spinnerAssessmentDetailSelectCourse"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/assessmentDetailCourseCaption"
+            android:contentDescription="@string/spinner_content_description_assessment_course"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_circle_24"
+            android:popupBackground="@color/button_background"
+            android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:prompt="@string/spinner_select_course"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/assessmentDetailTypeCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerAssessmentDetailSelectCourse"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_view_type"
+            android:textColor="@color/main_blue" />
+
+        <Spinner
+            android:id="@+id/spinnerAssessmentDetailType"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/assessmentDetailTypeCaption"
+            android:contentDescription="@string/hint_assessment_type"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_circle_24"
+            android:popupBackground="@color/button_background"
+            android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:prompt="@string/hint_assessment_type"
+            android:spinnerMode="dialog" />
+
+    </RelativeLayout>
+
+</ScrollView>

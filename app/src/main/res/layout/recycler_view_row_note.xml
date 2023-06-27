@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/noteTextAndTitleLayout"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/noteTitleRow"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/placeholder"
+                    android:lines="1"
+                    style="@style/custom_body_text_large"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/noteContentAndSubtitleIconLayout"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/noteTitleRow">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/noteContentIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/content_description_subTitle_icon"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:src="@drawable/icon_note"
+                        android:tint="@color/main_blue"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/noteContentLayout"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/noteContentFirstLine"
+                            style="@style/custom_body_text_small"
+                            android:text="@string/placeholder" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/noteContentSecondLine"
+                            android:layout_below="@id/noteContentFirstLine"
+                            style="@style/custom_body_text_small"
+                            android:text="@string/placeholder" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <ImageButton
+                android:id="@+id/noteRowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="@string/content_description_button_icon"
+                android:src="@drawable/arrow_circle_right"
+                app:tint="@color/button_background"
+                tools:ignore="ImageContrastCheck" />
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".ViewControllers.Detail.CourseDetail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/courseDetailNameCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/headline_title"
+            android:textColor="@color/main_blue" />
+
+
+        <EditText
+            android:id="@+id/editTextDetailCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/courseDetailNameCaption"
+            android:hint="@string/hint_enter_title"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textColorHint="#616161" />
+
+
+        <TextView
+            android:id="@+id/courseDetailDateCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDetailCourseName"
+            android:layout_marginTop="15dp"
+            android:text="@string/text_view_dates"
+            android:textColor="@color/main_blue" />
+
+
+        <LinearLayout
+            android:id="@+id/courseDetailDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseDetailDateCaption">
+
+            <EditText
+                android:id="@+id/editTextDetailCourseStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:hint="@string/hint_enter_start_date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textColorHint="#616161" />
+
+            <EditText
+                android:id="@+id/editTextDetailCourseEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:hint="@string/hint_enter_end_date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textColorHint="#616161" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/courseTermDetailNameCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseDetailDateLayout"
+            android:layout_marginTop="15dp"
+            android:text="@string/term_title"
+            android:textColor="@color/main_blue" />
+
+        <Spinner
+            android:id="@+id/spinnerCourseDetailTerm"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/courseTermDetailNameCaption"
+            android:contentDescription="@string/spinner_select_term"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_circle_24"
+            android:popupBackground="@color/button_background"
+            android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:prompt="@string/spinner_select_term"
+            android:spinnerMode="dialog"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/courseDetailStatusCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerCourseDetailTerm"
+            android:layout_marginTop="15dp"
+            android:text="@string/course_status_title"
+            android:textColor="@color/main_blue" />
+
+        <Spinner
+            android:id="@+id/spinnerCourseDetailStatus"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/courseDetailStatusCaption"
+            android:contentDescription="@string/spinner_select_course_status"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_circle_24"
+            android:popupBackground="@color/button_background"
+            android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:prompt="@string/spinner_select_course_status"
+            android:spinnerMode="dialog" />
+
+
+        <TextView
+            android:id="@+id/courseDetailInstructorCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerCourseDetailStatus"
+            android:layout_marginTop="15dp"
+            android:text="@string/instructor_title"
+            android:textColor="@color/main_blue" />
+
+        <Spinner
+            android:id="@+id/spinnerCourseDetailInstructor"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/courseDetailInstructorCaption"
+            android:contentDescription="@string/spinner_course_detail_select_instructor"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_circle_24"
+            android:popupBackground="@color/button_background"
+            android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:prompt="@string/spinner_course_detail_select_instructor"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/courseDetailAssessmentListCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerCourseDetailInstructor"
+            android:layout_marginTop="15dp"
+            android:text="@string/assessment_title_plural"
+            android:textColor="@color/main_blue" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/courseDetailAssessmentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courseDetailAssessmentListCaption" />
+
+        <TextView
+            android:id="@+id/courseDetailNotesListCaption"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseDetailAssessmentList"
+            android:layout_marginTop="15dp"
+            android:text="@string/notes_title"
+            android:textColor="@color/main_blue" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/courseDetailNotesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courseDetailNotesListCaption" />
+
+    </RelativeLayout>
+
+</ScrollView>

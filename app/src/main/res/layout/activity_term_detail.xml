@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ViewControllers.Detail.TermDetail">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewTermDetailTitle"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/headline_title"
+            android:textColor="@color/main_blue" />
+
+        <EditText
+            android:id="@+id/editTextTermDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTermDetailTitle"
+            android:hint="@string/hint_enter_title"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:textColorHint="#616161" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTermDetailsDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/editTextTermDetailName"
+            android:baselineAligned="false">
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutTermDetailsStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewTermDetailStartDate"
+                    style="@style/custom_headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/headline_start_date"
+                    android:textColor="@color/main_blue" />
+
+                <EditText
+                    android:id="@+id/editTextTermDetailStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTermDetailStartDate"
+                    android:focusable="false"
+                    android:hint="@string/hint_enter_start_date"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textColorHint="#616161" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutTermDetailsEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewTermDetailEndDate"
+                    style="@style/custom_headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/headline_end_date"
+                    android:textColor="@color/main_blue" />
+
+                <EditText
+                    android:id="@+id/editTextTermDetailEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTermDetailEndDate"
+                    android:focusable="false"
+                    android:hint="@string/hint_enter_end_date"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textColorHint="#616161" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTermDetailCourse"
+            style="@style/custom_headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutTermDetailsDates"
+            android:layout_marginTop="10dp"
+            android:text="@string/headline_courses"
+            android:textColor="@color/main_blue" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTermDetailCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTermDetailCourse"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

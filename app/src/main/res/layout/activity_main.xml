@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_background"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMainLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            app:queryHint="@string/hint_search_all"
+            android:background="@drawable/search_view_bg"
+            android:layout_below="@id/recyclerViewMainLinks"
+            app:iconifiedByDefault="false"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/queryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/termSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/queryText"
+            android:layout_marginBottom="10dp"
+            android:text="@string/headline_terms"
+            style="@style/custom_headline6" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/termSearchResultsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/termSearchList"/>
+
+        <TextView
+            android:id="@+id/courseSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/termSearchResultsList"
+            android:layout_marginBottom="10dp"
+            android:text="@string/headline_courses"
+            style="@style/custom_headline6"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/courseSearchResultsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseSearchList"/>
+
+        <TextView
+            android:id="@+id/assessmentSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseSearchResultsList"
+            android:layout_marginBottom="10dp"
+            android:text="@string/headline_assessments"
+            style="@style/custom_headline6"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/assessmentSearchResultsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assessmentSearchList"/>
+
+        <TextView
+            android:id="@+id/notesSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assessmentSearchResultsList"
+            android:layout_marginBottom="10dp"
+            android:text="@string/headline_notes"
+            style="@style/custom_headline6"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/noteSearchResultsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notesSearchList"/>
+
+        <TextView
+            android:id="@+id/instructorsSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noteSearchResultsList"
+            android:layout_marginBottom="10dp"
+            android:text="@string/headline_instructors"
+            style="@style/custom_headline6"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/instructorSearchResultsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructorsSearchList"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

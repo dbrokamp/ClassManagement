@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/main_add_new"
+        android:icon="@drawable/icon_add_box"
+        app:showAsAction="always"
+        android:title="@string/main_menu_title">
+
+        <menu>
+            <item android:id="@+id/main_add_new_term"
+                android:title="@string/add_new_term"
+                android:icon="@drawable/icon_term"/>
+            <item android:id="@+id/main_add_new_class"
+                android:title="@string/add_new_class"
+                android:icon="@drawable/icon_course"/>
+            <item android:id="@+id/main_add_new_assessment"
+                android:title="@string/add_new_assessment"
+                android:icon="@drawable/icon_assessment"/>
+            <item android:id="@+id/main_add_new_note"
+                android:title="@string/add_new_note"
+                android:icon="@drawable/icon_notes_48"/>
+            <item android:id="@+id/main_add_new_instructor"
+                android:title="@string/add_new_instructor"
+                android:icon="@drawable/icon_instructor"/>
+        </menu>
+
+
+
+    </item>
+
+</menu>

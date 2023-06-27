@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".ViewControllers.AddNew.AddNewCourse">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/textViewAddNewCourseTitle"
+        style="@style/custom_headline6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/headline_title"
+        android:textColor="@color/main_blue" />
+
+
+    <EditText
+        android:id="@+id/editTextAddNewCourseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAddNewCourseTitle"
+        android:hint="@string/hint_enter_title"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAddNewCourseDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAddNewCourseTitle"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewAddNewCourseStartDate"
+                style="@style/custom_headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/headline_start_date" />
+
+            <EditText
+                android:id="@+id/editTextAddNewCourseStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAddNewCourseStartDate"
+                android:focusable="false"
+                android:hint="@string/hint_enter_start_date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewAddNewCourseEndDate"
+                style="@style/custom_headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/headline_end_date" />
+
+            <EditText
+                android:id="@+id/editTextAddNewCourseEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAddNewCourseEndDate"
+                android:focusable="false"
+                android:hint="@string/hint_enter_end_date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchAddNewCourseAlert"
+        style="@style/custom_body_text_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutAddNewCourseDates"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/switch_turn_on_alerts"
+        app:switchPadding="10dp" />
+
+    <TextView
+        android:id="@+id/textViewAddNewCourseTerm"
+        style="@style/custom_headline6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchAddNewCourseAlert"
+        android:layout_marginTop="10dp"
+        android:text="@string/term_title" />
+
+        <Spinner
+            android:id="@+id/spinnerAddNewCourseTerm"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAddNewCourseTerm"
+            android:contentDescription="@string/content_description_spinner_select_term"
+            android:dropDownWidth="match_parent"
+            android:minHeight="48dp"
+            android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:prompt="@string/spinner_prompt_select_term" />
+
+    <TextView
+        android:id="@+id/textViewAddNewCourseStatus"
+        style="@style/custom_headline6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerAddNewCourseTerm"
+        android:layout_marginTop="10dp"
+        android:text="@string/course_status_title" />
+
+    <Spinner
+        android:id="@+id/spinnerAddNewCourseStatus"
+        style="@android:style/Widget.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAddNewCourseStatus"
+        android:contentDescription="@string/content_description_spinner_select_course_status"
+        android:dropDownWidth="match_parent"
+        android:minHeight="48dp"
+        android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+        android:prompt="@string/spinner_prompt_select_status" />
+
+
+    <TextView
+        android:id="@+id/textViewAddNewCourseInstructor"
+        style="@style/custom_headline6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerAddNewCourseStatus"
+        android:layout_marginTop="10dp"
+        android:text="@string/instructor_title" />
+
+    <Spinner
+        android:id="@+id/spinnerAddNewCourseInstructor"
+        style="@android:style/Widget.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAddNewCourseInstructor"
+        android:contentDescription="@string/content_description_spinner_select_instructor"
+        android:dropDownWidth="match_parent"
+        android:minHeight="48dp"
+        android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+        android:prompt="@string/spinner_prompt_select_instructor" />
+
+    </RelativeLayout>
+</ScrollView>

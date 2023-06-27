@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/course_list_menu"
+        android:icon="@drawable/icon_add_box"
+        app:showAsAction="always"
+        android:title="@string/menu_title_add">
+
+        <menu>
+
+            <item android:id="@+id/assessment_list_menu_add_assessment"
+                android:title="@string/add_new_assessment"
+                android:icon="@drawable/icon_assessment"/>
+
+        </menu>
+    </item>
+</menu>

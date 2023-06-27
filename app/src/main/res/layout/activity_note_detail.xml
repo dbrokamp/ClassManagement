@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ViewControllers.Detail.NoteDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/noteDetailTitleCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/headline_title" />
+
+        <EditText
+            android:id="@+id/editTextNoteDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noteDetailTitleCaption"
+            android:hint="@string/hint_enter_title"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:textColorHint="#616161" />
+
+
+        <TextView
+            android:id="@+id/noteDetailCourseCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNoteDetailTitle"
+            android:layout_marginTop="10dp"
+            android:text="@string/course_title" />
+
+        <Spinner
+            android:id="@+id/noteDetailSpinnerSelectCourse"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_below="@+id/noteDetailCourseCaption"
+            android:contentDescription="@string/spinner_select_course"
+            android:dropDownWidth="match_parent"
+            android:prompt="@string/spinner_select_course"
+            android:spinnerMode="dropdown" />
+
+
+        <TextView
+            android:id="@+id/noteContentDetailTextCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noteDetailSpinnerSelectCourse"
+            android:layout_marginTop="10dp"
+            android:text="@string/note_title"
+            android:importantForAutofill="no"/>
+
+
+        <EditText
+            android:id="@+id/noteDetailText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/noteContentDetailTextCaption"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/note_text_border"
+            android:gravity="top"
+            android:hint="@string/hint_enter_note"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:minHeight="300dp"
+            android:padding="5dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical"
+            android:textColorHint="#546E7A"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

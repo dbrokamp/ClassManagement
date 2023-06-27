@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_add_new_course"
+        android:icon="@drawable/icon_add_box"
+        android:title="@string/menu_title_add"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/item_add_new_course_add_term"
+                android:title="@string/menu_item_new_term" />
+            <item
+                android:id="@+id/item_add_new_course_add_instructor"
+                android:title="@string/menu_item_new_instructor" />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/add_new_course_action"
+        android:icon="@drawable/icon_task"
+        android:title="@string/menu_title_actions"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/add_new_course_menu_save"
+                android:icon="@drawable/icon_save"
+                android:title="@string/button_save" />
+            <item
+                android:id="@+id/add_new_course_menu_cancel"
+                android:icon="@drawable/icon_cancel"
+                android:title="@string/button_cancel" />
+        </menu>
+
+    </item>
+
+</menu>

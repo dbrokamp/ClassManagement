@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ViewControllers.AddNew.AddNewAssessment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/assessmentTitleCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/headline_title" />
+
+        <EditText
+            android:id="@+id/newEditTextAssessmentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessmentTitleCaption"
+            android:hint="@string/hint_enter_title"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+
+        <LinearLayout
+            android:id="@+id/assessmentDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newEditTextAssessmentTitle"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/assessmentDateCaption"
+                    style="@style/custom_headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/headline_start_date" />
+
+                <EditText
+                    android:id="@+id/editTextNewAssessmentStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/assessmentDateCaption"
+                    android:focusable="false"
+                    android:hint="@string/hint_enter_start_date"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textColorHint="#546E7A" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/addNewAssessmentEndDateTextView"
+                    style="@style/custom_headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/headline_end_date" />
+
+                <EditText
+                    android:id="@+id/editTextNewAssessmentEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addNewAssessmentEndDateTextView"
+                    android:focusable="false"
+                    android:hint="@string/hint_enter_end_date"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textColorHint="#546E7A" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchAddNewAssessmentAlert"
+            style="@style/custom_body_text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessmentDateLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/switch_turn_on_alerts"
+            app:switchPadding="10dp" />
+
+        <TextView
+            android:id="@+id/assessmentCourseCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switchAddNewAssessmentAlert"
+            android:layout_marginTop="10dp"
+            android:text="@string/headline_select_course" />
+
+        <Spinner
+            android:id="@+id/spinnerSelectCourse"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessmentCourseCaption"
+            android:contentDescription="@string/content_description_spinner_select_course"
+            android:dropDownWidth="match_parent"
+            android:minHeight="48dp"
+            android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:prompt="@string/spinner_select_course" />
+
+        <TextView
+            android:id="@+id/assessmentTypeCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerSelectCourse"
+            android:layout_marginTop="25dp"
+            android:text="@string/caption_select_assessment_type" />
+
+        <Spinner
+            android:id="@+id/spinnerSelectType"
+            style="@android:style/Widget.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assessmentTypeCaption"
+            android:contentDescription="@string/hint_assessment_type"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_circle_24"
+            android:minHeight="48dp"
+            android:popupTheme="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:prompt="@string/hint_assessment_type" />
+
+    </RelativeLayout>
+</ScrollView>

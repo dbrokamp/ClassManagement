@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewRecyclerViewRowTermTitleIcon"
+                android:contentDescription="@string/content_description_title_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_term"
+                app:tint="@color/main_blue" />
+
+            <TextView
+                android:id="@+id/textViewRecyclerViewRowTermTitle"
+                style="@style/custom_body_text_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageViewRecyclerViewRowTermTitleIcon"
+                android:text="@string/placeholder"
+                android:layout_marginStart="10dp"
+                tools:ignore="RelativeOverlap" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewRecyclerViewRowTermTitle"
+                android:layout_toEndOf="@id/imageViewRecyclerViewRowTermTitleIcon"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewRecyclerViewRowTermSubtitleIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/content_description_subTitle_icon"
+                    android:src="@drawable/star_icon"
+                    app:tint="@color/main_blue" />
+
+                <TextView
+                    android:id="@+id/textViewRecyclerViewRowTermSubtitle"
+                    style="@style/custom_body_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewRecyclerViewRowTermSubtitleIcon"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/placeholder"
+                    android:layout_centerVertical="true"/>
+
+
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imageButtonRecyclerViewRowTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:contentDescription="@string/content_description_button_icon"
+                android:src="@drawable/arrow_circle_right"
+                app:tint="@color/color_scheme_yellow"
+                tools:ignore="ImageContrastCheck" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

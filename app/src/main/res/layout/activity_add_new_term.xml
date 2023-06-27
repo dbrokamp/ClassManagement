@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".ViewControllers.AddNew.AddNewTerm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewAddNewTermTitle"
+        style="@style/custom_headline6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/headline_title"
+        android:textColor="@color/main_blue" />
+
+    <EditText
+        android:id="@+id/editTextAddNewTermTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAddNewTermTitle"
+        android:hint="@string/hint_enter_title"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAddNewTermDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAddNewTermTitle"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAddNewTermStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewAddNewTrmStartDate"
+                style="@style/custom_headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/headline_start_date"
+                android:textColor="@color/main_blue" />
+
+            <EditText
+                android:id="@+id/editTextAddNewTermStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAddNewTrmStartDate"
+                android:focusable="false"
+                android:hint="@string/hint_enter_start_date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAddNewTermEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewAddNewTermEndDate"
+                style="@style/custom_headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/headline_end_date" />
+
+            <EditText
+                android:id="@+id/editTextAddNewTermEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAddNewTermEndDate"
+                android:focusable="false"
+                android:hint="@string/hint_enter_end_date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

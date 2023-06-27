@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.drewbrokamp.classmanagement">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClassManagement"
+        tools:targetApi="31">
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:label="Search Results"/>
+
+        <receiver
+            android:name=".Util.NotificationReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name=".ViewControllers.Detail.InstructorDetail"
+            android:exported="false"
+            android:label="Instructor Details" />
+        <activity
+            android:name=".ViewControllers.Detail.NoteDetail"
+            android:exported="false"
+            android:label="Note Details" />
+        <activity
+            android:name=".ViewControllers.Detail.AssessmentDetail"
+            android:exported="false"
+            android:label="Assessment Details" />
+        <activity
+            android:name=".ViewControllers.Detail.CourseDetail"
+            android:exported="false"
+            android:label="Course Details" />
+        <activity
+            android:name=".ViewControllers.List.InstructorList"
+            android:exported="false"
+            android:label="Instructors" />
+        <activity
+            android:name=".ViewControllers.List.NoteList"
+            android:exported="false"
+            android:label="Notes" />
+        <activity
+            android:name=".ViewControllers.List.AssessmentList"
+            android:exported="false"
+            android:label="Assessments" />
+        <activity
+            android:name=".ViewControllers.List.CourseList"
+            android:exported="false"
+            android:label="Courses" />
+        <activity
+            android:name=".ViewControllers.List.TermList"
+            android:exported="false"
+            android:label="Terms" />
+        <activity
+            android:name=".ViewControllers.AddNew.AddNewNote"
+            android:exported="false"
+            android:label="Add New Note" />
+        <activity
+            android:name=".ViewControllers.AddNew.AddNewAssessment"
+            android:exported="false"
+            android:label="Add New Assessment" />
+        <activity
+            android:name=".ViewControllers.AddNew.AddNewInstructor"
+            android:exported="false"
+            android:label="Add New Instructor" />
+        <activity
+            android:name=".ViewControllers.AddNew.AddNewCourse"
+            android:exported="false"
+            android:label="Add New Course" />
+        <activity
+            android:name=".ViewControllers.AddNew.AddNewTerm"
+            android:exported="false"
+            android:label="@string/add_new_term_label" />
+        <activity
+            android:name=".ViewControllers.Detail.TermDetail"
+            android:exported="false"
+            android:label="Term Details" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="WGU Class Management">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

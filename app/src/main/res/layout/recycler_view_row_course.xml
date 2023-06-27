@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:baselineAligned="false">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutRecyclerViewRowCourseText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/courseName"
+                        style="@style/custom_body_text_large"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeTextType="uniform"
+                        android:lines="1"
+                        android:text="@string/placeholder" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutRecyclerViewRowCourseStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/courseName">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageViewRecyclerViewRowCourseStarIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:contentDescription="@string/content_description_subTitle_icon"
+                            android:src="@drawable/star_icon"
+                            app:tint="@color/main_blue" />
+
+
+                        <TextView
+                            android:id="@+id/courseStatus"
+                            style="@style/custom_body_text_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/imageViewRecyclerViewRowCourseStarIcon"
+                            android:text="@string/placeholder" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutRecyclerViewRowCourseDates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relativeLayoutRecyclerViewRowCourseStatus">
+
+                        <ImageView
+                            android:id="@+id/imageViewRecyclerViewRowCourseSecondSubtitleIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:contentDescription="@string/content_description_subTitle_icon"
+                            android:src="@drawable/icon_calendar"
+                            app:tint="@color/main_blue" />
+
+                        <TextView
+                            android:id="@+id/courseDates"
+                            style="@style/custom_body_text_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/imageViewRecyclerViewRowCourseSecondSubtitleIcon"
+                            android:text="@string/place_holder_dates" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp">
+
+                    <ImageButton
+                        android:id="@+id/courseDetailViewButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:contentDescription="@string/content_description_button_icon"
+                        android:src="@drawable/arrow_circle_right"
+                        app:tint="@color/button_background"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

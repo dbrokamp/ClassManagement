@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".ViewControllers.AddNew.AddNewInstructor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/instructorNameCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/instructor_name_caption" />
+
+
+        <EditText
+            android:id="@+id/editTextNewInstructorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructorNameCaption"
+            android:hint="@string/hint_enter_name"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+
+        <TextView
+            android:id="@+id/instructorEmailCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNewInstructorName"
+            android:layout_marginTop="10dp"
+            android:text="@string/email_title" />
+
+        <EditText
+            android:id="@+id/editTextNewInstructorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructorEmailCaption"
+            android:hint="@string/hint_enter_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <TextView
+            android:id="@+id/instructorPhoneCaption"
+            style="@style/custom_headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNewInstructorEmail"
+            android:layout_marginTop="10dp"
+            android:text="@string/phone_number_title" />
+
+        <EditText
+            android:id="@+id/editTextNewInstructorPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructorPhoneCaption"
+            android:hint="@string/hint_enter_phone_number"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+    </RelativeLayout>
+</ScrollView>
